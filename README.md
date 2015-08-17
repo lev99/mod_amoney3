@@ -10,6 +10,6 @@ The module is designed to organize your site receiving donations (well, or just 
 * PayPal 
 
 ## License
-<b>Amoney</b> module designed for [Joomla!](http://www.joomla.org), designed by [Adeptus](http://adeptsite.info), released under the [GNU General Public License](http://www.gnu.org/copyleft/gpl.html).<br /><br />
+<b>AMoney</b> module designed for [Joomla!](http://www.joomla.org), designed by [Adeptus](http://adeptsite.info), released under the [GNU General Public License](http://www.gnu.org/copyleft/gpl.html).<br /><br />
 Copyright &copy; 2008 Adeptus. All rights reserved.<br />
 (Last update: 2009 - Version 1.0)
