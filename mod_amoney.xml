@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install type="module" version="1.5.0">
+	<name>AMoney</name>
+	<creationDate>2009</creationDate>
+	<author>Adeptus</author>
+	<copyright>Released under GNU/GPL License</copyright>
+	<authorEmail>adeptus@adeptsite.info</authorEmail>
+	<authorUrl>http://adeptsite.info</authorUrl>
+	<version>1.0</version>
+	<description>Simple Joomla 1.5 native module for PayPal, Yandex.Money, Webmoney payments.</description>
+<files>
+	<filename module="mod_amoney">mod_amoney.php</filename>
+    <filename module="mod_amoney">images/logowm.gif</filename>
+    <filename module="mod_amoney">images/logoyandex.gif</filename>
+    <filename module="mod_amoney">images/logopaypal.gif</filename>
+    <filename module="mod_amoney">images/logowm_small.gif</filename>
+    <filename module="mod_amoney">images/logoyandex_small.gif</filename>
+    <filename module="mod_amoney">images/logopaypal_small.gif</filename>
+    <filename module="mod_amoney">js/jquery.js</filename>
+</files>
+<params>
+    <param name="@spacer" type="spacer" default="Настройки" label="" description="" />
+	<param name="moduleclass_sfx" type="text" default="" label="Суффикс класса модуля" description="" />
+	<param name="jquery" type="list" default="1" label="Загружать JQuery?" description="">
+		<option value="1">Да</option>
+		<option value="0">Нет</option>
+	</param>
+	<param name="pretext" label="Заголовок" type="text" default="Donate Author" />
+	<param name="btntxt" label="Текст кнопки" type="text" default="Donate" />
+
+    <param name="@spacer" type="spacer" default="Webmoney" label="Webmoney" description="" />
+	<param name="use_wm" type="radio" default="1" label="Webmoney?" description="">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+	</param>
+    <param name="wmz" type="text" size="14" default="Z336955269328" label="WMZ кошелек" description="Ваш USD кошелек" />
+	<param name="wme" type="text" size="14" default="E103233136042" label="WME кошелек" description="Ваш Euro кошелек" />
+    <param name="wmr" type="text" size="14" default="R270500581273" label="WMR кошелек" description="Ваш Rubles кошелек" />
+    <param name="wmu" type="text" size="14" default="U182150656389" label="WMU кошелек" description="Ваш Grivn кошелек" />
+	<param name="wm_summ" type="text" size="5" default="10" label="Сумма" description="Сумма по умолчанию" />
+	<param name="wm_successurl" type="text" default="http://" label="URL успеха" description="" />
+	<param name="wm_errorurl" type="text" default="http://" label="URL ошибки" description="" />
+	<param name="wm_descpay" type="textarea" cols="20" rows="5" default="Donate Author" label="Описание платежа" description="" />
+
+    <param name="@spacer" type="spacer" default="Yandex.Money" label="Yandex.Money" description="" />
+	<param name="use_yandex" type="radio" default="1" label="Yandex.Money?" description="">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+	</param>
+    <param name="yandex" type="text" size="14" default="41001113417267" label="Кошелек Yandex.Money" description="" />
+	<param name="yandex_summ" type="text" size="14" default="50" label="Сумма" description="Сумма по умолчанию" />
+	<param name="yandex_successurl" type="text" default="http://" label="URL вашего сайта" description="" />
+
+    <param name="@spacer" type="spacer" default="PayPal" label="PayPal" description="" />
+	<param name="use_paypal" type="radio" default="1" label="PayPal?" description="">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+	</param>
+	<param name="paypal_email" type="text" default="alex1962@donpac.ru" label="PayPal Email" description="" />
+	<param name="donate_org" type="text"  label="Описание платежа" default="Donate Author" description="" />
+	<param name="paypalcur_on" type="radio" default="0" label="Выбор валюты" description="">
+			<option value="1">Выключить</option>
+			<option value="0">Включить</option>
+	</param>
+	<param name="donate_len" type="radio" default="1" label="Периодически" description="">
+			<option value="1">Выключить</option>
+			<option value="0">Включить</option>
+	</param>
+	<param name="paypallen_val" type="list" default="4" label="Период" description="">
+		<option value='4'>Один раз</option>
+		<option value='1'>Еженедельно</option>
+		<option value='2'>Ежемесячно</option>
+	</param>
+	<param name="paypalval_on" type="radio" default="0" label="Сумма" description="Выьор суммы">
+			<option value="1">Выключить</option>
+			<option value="0">Включить</option>
+	</param>
+	<param name="paypalcur_val" type="list" default="USD" label="Валюта по умолчанию" description="">
+		<option value='USD'>USD</option>
+		<option value='GBP'>GBP</option>
+		<option value='EUR'>EUR</option>
+	</param>
+	<param name="paypalval_val" type="text"  default="5" label="Сумма" description="Сумма по умолчанию" />
+    <param name="paypalvalleast_val" type="text" default="5" label="Минимум" description="Минимальная сумма" />
+	<param name="link_return" type="text" size="40" default="http://www.yoursite.com" label="URL успеха" description=""/>
+    <param name="link_cancel" type="text" size="40" default="http://www.yoursite.com" label="URL ошибки" description=""/>
+</params>
+</install>
