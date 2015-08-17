@@ -3,6 +3,8 @@
 The original Universal module Donate (Webmoney, Yandex, PayPal) Version v 1.0 with AJAX functionality.<br />
 The module is designed to organize your site receiving donations (well, or just payments for goods or services ...)
 
+# Joomla 1.5
+
 # It supports payment systems
 
 * Webmoney
